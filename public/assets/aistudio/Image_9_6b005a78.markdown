@@ -1,0 +1,244 @@
+---
+name: Aurelle Haute Tech
+colors:
+  surface: '#f9f9f7'
+  surface-dim: '#dadad8'
+  surface-bright: '#f9f9f7'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f4f4f2'
+  surface-container: '#eeeeec'
+  surface-container-high: '#e8e8e6'
+  surface-container-highest: '#e2e3e1'
+  on-surface: '#1a1c1b'
+  on-surface-variant: '#42474e'
+  inverse-surface: '#2f3130'
+  inverse-on-surface: '#f1f1ef'
+  outline: '#72777f'
+  outline-variant: '#c2c7cf'
+  surface-tint: '#3b6186'
+  primary: '#2e5679'
+  on-primary: '#ffffff'
+  primary-container: '#486e93'
+  on-primary-container: '#e1eeff'
+  inverse-primary: '#a4caf4'
+  secondary: '#4e6075'
+  on-secondary: '#ffffff'
+  secondary-container: '#d1e4fd'
+  on-secondary-container: '#54667b'
+  tertiary: '#7a461b'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#975d31'
+  on-tertiary-container: '#ffe8db'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#cfe5ff'
+  primary-fixed-dim: '#a4caf4'
+  on-primary-fixed: '#001d34'
+  on-primary-fixed-variant: '#21496c'
+  secondary-fixed: '#d1e4fd'
+  secondary-fixed-dim: '#b5c8e0'
+  on-secondary-fixed: '#091d2f'
+  on-secondary-fixed-variant: '#36485c'
+  tertiary-fixed: '#ffdcc5'
+  tertiary-fixed-dim: '#ffb783'
+  on-tertiary-fixed: '#301400'
+  on-tertiary-fixed-variant: '#6c3a10'
+  background: '#f9f9f7'
+  on-background: '#1a1c1b'
+  surface-variant: '#e2e3e1'
+typography:
+  display-lg:
+    fontFamily: Playfair Display
+    fontSize: 56px
+    fontWeight: '400'
+    lineHeight: 64px
+    letterSpacing: -0.02em
+  display-lg-mobile:
+    fontFamily: Playfair Display
+    fontSize: 38px
+    fontWeight: '400'
+    lineHeight: 44px
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Playfair Display
+    fontSize: 36px
+    fontWeight: '500'
+    lineHeight: 44px
+    letterSpacing: -0.015em
+  headline-lg-mobile:
+    fontFamily: Playfair Display
+    fontSize: 28px
+    fontWeight: '500'
+    lineHeight: 34px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Playfair Display
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: 0em
+  headline-sm:
+    fontFamily: Playfair Display
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: 0em
+  title-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: -0.01em
+  title-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 22px
+    letterSpacing: 0em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 26px
+    letterSpacing: 0em
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 22px
+    letterSpacing: 0.01em
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 18px
+    letterSpacing: 0.015em
+  label-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+    letterSpacing: 0.02em
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.04em
+  label-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 10px
+    fontWeight: '600'
+    lineHeight: 14px
+    letterSpacing: 0.08em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-md: 1.5rem
+  gutter-lg: 2rem
+  margin: 1rem
+  margin-md: 2rem
+  margin-lg: 4rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+  space-2xl: 3rem
+  space-3xl: 4rem
+---
+
+## Brand & Style
+
+The design system embodies "Haute Tech Minimalism"—the intersection of classic European haute couture editorial sensibility and rigorous, state-of-the-art computational utility. Designed for discerning digital capsule wardrobe curators and fashion-forward tastemakers, the platform must feel deliberate, intellectual, and effortlessly poised. 
+
+The aesthetic marries warm, atmospheric minimalism with precision utility:
+- **Atmospheric Neutrality:** Dominated by natural, unbleached textile tones rather than sterile digital whites, giving every garment image breathing room.
+- **Editorial Contrast:** Crisp, intentional typographics that shift between high-fashion editorial titling and technical, monoline data labels.
+- **Subtle Tactility:** Razor-thin structural borders and translucent glassmorphic surfaces that mirror high-end atelier vitrines and lookbooks.
+- **Intelligent Restraint:** Restrained bursts of soft Parisian blue and terracotta indicate AI-driven wardrobe intelligence, cost-per-wear (CPW) metrics, and system feedback without cluttering the aesthetic harmony.
+
+## Colors
+
+The palette references archival atelier materials, tactile papery tones, and muted architectural pigments.
+
+- **Primary Canvas & Surfaces (`#F0F0EE`):** Warm unbleached off-white/cream serving as the default background, reducing ocular fatigue and grounding digital imagery in an organic physical register.
+- **Structural Slate (`#3B4D61`):** Serves as secondary anchoring for structured cards, deep contrast modules, and primary UI control surfaces.
+- **Functional Accent (`#486E93`):** Muted Parisian blue utilized for AI recommendations, state changes, focus rings, interactive glyphs, and primary links.
+- **Metric Highlight (`#D49160`):** Warm terracotta reserved exclusively for high-value intelligence: Cost-Per-Wear (CPW) insights, capsule optimization badges, status highlights, and alert micro-indicators.
+- **Text & Hierarchy:**
+  - Absolute Crisp Black (`#161616`) for display headlines, body copy, and ultra-high contrast emphasis.
+  - Muted Neutral Gray (`#818085`) for secondary metadata, subtext, empty state copy, and subdued icons.
+  - Warm Divider Slate (`#AFAEAC`) and Hairline Border (`#E2E1DF`) for spatial division without visual fragmentation.
+
+## Typography
+
+The typographic system creates an interplay between historic couture mastheads and contemporary digital ergonomics.
+
+- **Editorial Titles (`Playfair Display`):** Reserved for high-level curation banners, wardrobe collection titles, modal headings, and seasonal narratives. Should be set at medium to regular weights to maintain delicate serifs and crisp hairlines.
+- **System Interface & Body (`Plus Jakarta Sans`):** Clean, geometric, and highly legible across dense garment spec sheets, analytics charts, and utility actions.
+- **Typographic Rules:**
+  - Micro-labels, tags, and category chips must use uppercase treatment in `label-sm` with letter spacing widened to `+0.08em` for premium utilitarian rhythm.
+  - Numbers and financial/analytical metrics (e.g., CPW, wardrobe balance) should leverage tabular lining figures in `Plus Jakarta Sans` for clean vertical alignment.
+
+## Layout & Spacing
+
+The layout adheres to a strict 8pt spatial grid system (0.5rem increments), maintaining uniform vertical and horizontal cadence.
+
+- **Grid Architecture:**
+  - **Mobile (< 768px):** 4-column fluid layout with `1rem` (16px) margins and `1rem` gutters. Touch zones strictly enforce a `48x48dp` hit area, particularly inside the primary bottom navigation and thumb-accessible quick-action drawers.
+  - **Tablet (768px – 1024px):** 8-column layout with `2rem` (32px) margins and `1.5rem` (24px) gutters.
+  - **Desktop (> 1024px):** 12-column layout max-width bounded at `1440px`, centered, with `4rem` (64px) margins and `2rem` (32px) gutters.
+- **Ergonomics:** Critical capsule controls (outfit swiping, item sorting, filter triggers) are pinned to bottom anchor bars on mobile viewport frames to respect lower one-third thumb-zone mechanics.
+
+## Elevation & Depth
+
+Depth is conveyed through subtle tonal gradation and atelier-inspired frosted glass rather than heavy dropped shadows.
+
+- **Level 0 (Flat Ground):** Background `#F0F0EE` with zero shadow.
+- **Level 1 (Cards & Modules):** Surface background of solid `#FFFFFF` or translucent `#F0F0EE` supported by a 1px perimeter outline in `#E2E1DF`. Shadow is non-existent or minimal: `0 1px 2px rgba(22, 22, 22, 0.03)`.
+- **Level 2 (Glassmorphic Floating Panels & Drawers):** `rgba(240, 240, 238, 0.72)` background with `backdrop-filter: blur(16px) saturate(140%)`, bounded by a hairline border `1px solid rgba(255, 255, 255, 0.6)`. Shadow: `0 8px 32px -4px rgba(59, 77, 97, 0.06), 0 2px 6px -1px rgba(22, 22, 22, 0.02)`.
+- **Level 3 (Modals & Overlays):** Deep ambient diffusion tinted by slate: `0 24px 48px -12px rgba(59, 77, 97, 0.12)`.
+
+## Shapes
+
+The geometric identity balances architectural precision with soft touch interactions:
+- **Base Geometry (`roundedness: 1`):** Core interactive elements (buttons, input boxes, structural cards) use 4px (`0.25rem`) corner rounding to evoke crisp stationery and clean lookbook borders.
+- **Cards & Sheets (`rounded-lg`):** Wardrobe item cards and bottom sheets step up to 8px (`0.5rem`) for subtle softness.
+- **Pill Exception:** Status indicators, AI recommendation chips, CPW tags, and floating circular action triggers break the system intentionally using full pill radii (`9999px`) to distinguish meta-attributes and badges from functional content containers.
+
+## Components
+
+### Buttons
+- **Primary Action:** Solid `#161616` background, `#F0F0EE` text, 4px radius, minimum 48px height. On hover: background `#3B4D61`. Focus ring: 2px offset `#486E93`.
+- **Secondary / Ghost:** 1px border `#AFAEAC`, transparent background, `#161616` text. Hover transitions to `#F0F0EE` background tint with border `#161616`.
+- **AI Trigger:** Muted Parisian blue `#486E93` solid fill with `#FFFFFF` text and subtle pill shape when acting as an inline recommendation pill.
+
+### Garment Cards
+- Transparent or crisp `#FFFFFF` display backing with 1px border `#E2E1DF`.
+- Image presentation maintains a strict 3:4 aspect ratio with subtle bottom metadata: Item name (`title-md`), Brand/Category (`label-sm` in `#818085`), and CPW Indicator tag docked at top-right.
+
+### Chips & Badges
+- **Pill Tags:** Height 24px, 9999px radius, padding `0 10px`.
+- **Metric Highlight Chip (CPW):** Background `rgba(212, 145, 96, 0.12)`, text `#D49160`, border `1px solid rgba(212, 145, 96, 0.3)`.
+- **Filter Chip:** Neutral `#F0F0EE` base, 1px border `#E2E1DF`, text `#161616`. Selected state: `#3B4D61` background, `#FFFFFF` text.
+
+### Form Inputs & Selectors
+- Clean underline or 1px boxed outline `#AFAEAC` with background `#FFFFFF`. Height 48px for ergonomic typing.
+- Active focus state sharpens the outline to 1px `#161616` with an accent underline `#486E93`. Placeholder text in `#818085`.
+
+### Checkboxes & Radio Controls
+- Minimum 48x48dp click bounds enclosing a 18x18px visible target. Checkboxes use 2px radius; radios are circular.
+- Selected state fills with `#161616` or `#486E93` (for automated AI styling selections) displaying crisp white check glyphs.
+
+### Metric Widgets (Cost-Per-Wear & Wardrobe Analytics)
+- Structured panels backed with `#FFFFFF` or glassmorphic blur.
+- Numerical value rendered in `Plus Jakarta Sans` 24px semi-bold (`headline-md`) with small terracotta (`#D49160`) delta indicators to highlight high-rotation vs. stagnant investment items.

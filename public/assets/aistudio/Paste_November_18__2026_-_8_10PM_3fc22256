@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'on-primary': '#ffffff', 'surface-bright': '#f9f9f7', 'surface': '#f9f9f7', 'on-background': '#1a1c1b', 'on-surface': '#1a1c1b', 'error': '#ba1a1a', 'outline': '#72777f', 'on-surface-variant': '#42474e', 'on-secondary-container': '#54667b', 'tertiary-fixed': '#ffdcc5', 'surface-container-high': '#e8e8e6', 'surface-variant': '#e2e3e1', 'on-error-container': '#93000a', 'on-tertiary-fixed': '#301400', 'surface-container-highest': '#e2e3e1', 'on-secondary-fixed': '#091d2f', 'inverse-primary': '#a4caf4', 'on-primary-fixed-variant': '#21496c', 'secondary-container': '#d1e4fd', 'tertiary-fixed-dim': '#ffb783', 'surface-tint': '#3b6186', 'on-tertiary-container': '#ffe8db', 'secondary-fixed': '#d1e4fd', 'primary-fixed-dim': '#a4caf4', 'on-tertiary-fixed-variant': '#6c3a10', 'error-container': '#ffdad6', 'secondary-fixed-dim': '#b5c8e0', 'on-secondary': '#ffffff', 'surface-container': '#eeeeec', 'surface-dim': '#dadad8', 'secondary': '#4e6075', 'on-secondary-fixed-variant': '#36485c', 'tertiary': '#7a461b', 'on-error': '#ffffff', 'surface-container-lowest': '#ffffff', 'primary-container': '#486e93', 'on-tertiary': '#ffffff', 'outline-variant': '#c2c7cf', 'primary-fixed': '#cfe5ff', 'on-primary-container': '#e1eeff', 'inverse-surface': '#2f3130', 'primary': '#2e5679', 'tertiary-container': '#975d31', 'surface-container-low': '#f4f4f2', 'background': '#f9f9f7', 'inverse-on-surface': '#f1f1ef', 'on-primary-fixed': '#001d34' }, 'borderRadius': { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, 'spacing': { 'space-lg': '1.5rem', 'space-3xl': '4rem', 'space-md': '1rem', 'gutter': '1rem', 'space-xl': '2rem', 'margin-lg': '4rem', 'gutter-md': '1.5rem', 'gutter-lg': '2rem', 'margin': '1rem', 'margin-md': '2rem', 'space-2xl': '3rem', 'space-xs': '0.25rem', 'space-sm': '0.5rem' }, 'fontFamily': { 'title-md': ['Plus Jakarta Sans'], 'label-sm': ['Plus Jakarta Sans'], 'display-lg-mobile': ['Playfair Display'], 'headline-lg-mobile': ['Playfair Display'], 'label-md': ['Plus Jakarta Sans'], 'body-lg': ['Plus Jakarta Sans'], 'label-lg': ['Plus Jakarta Sans'], 'title-lg': ['Plus Jakarta Sans'], 'display-lg': ['Playfair Display'], 'body-md': ['Plus Jakarta Sans'], 'body-sm': ['Plus Jakarta Sans'], 'headline-sm': ['Playfair Display'], 'headline-lg': ['Playfair Display'], 'headline-md': ['Playfair Display'] }, 'fontSize': { 'title-md': ['16px', { 'lineHeight': '22px', 'letterSpacing': '0em', 'fontWeight': '600' }], 'label-sm': ['10px', { 'lineHeight': '14px', 'letterSpacing': '0.08em', 'fontWeight': '600' }], 'display-lg-mobile': ['38px', { 'lineHeight': '44px', 'letterSpacing': '-0.01em', 'fontWeight': '400' }], 'headline-lg-mobile': ['28px', { 'lineHeight': '34px', 'letterSpacing': '-0.01em', 'fontWeight': '500' }], 'label-md': ['12px', { 'lineHeight': '16px', 'letterSpacing': '0.04em', 'fontWeight': '500' }], 'body-lg': ['16px', { 'lineHeight': '26px', 'letterSpacing': '0em', 'fontWeight': '400' }], 'label-lg': ['14px', { 'lineHeight': '20px', 'letterSpacing': '0.02em', 'fontWeight': '600' }], 'title-lg': ['18px', { 'lineHeight': '24px', 'letterSpacing': '-0.01em', 'fontWeight': '600' }], 'display-lg': ['56px', { 'lineHeight': '64px', 'letterSpacing': '-0.02em', 'fontWeight': '400' }], 'body-md': ['14px', { 'lineHeight': '22px', 'letterSpacing': '0.01em', 'fontWeight': '400' }], 'body-sm': ['12px', { 'lineHeight': '18px', 'letterSpacing': '0.015em', 'fontWeight': '400' }], 'headline-sm': ['20px', { 'lineHeight': '28px', 'letterSpacing': '0em', 'fontWeight': '600' }], 'headline-lg': ['36px', { 'lineHeight': '44px', 'letterSpacing': '-0.015em', 'fontWeight': '500' }], 'headline-md': ['24px', { 'lineHeight': '32px', 'letterSpacing': '0em', 'fontWeight': '600' }] } } } };</script><style>@layer base { html, body { min-height: 100%; margin: 0; padding: 0; } .pb-safe { padding-bottom: max(env(safe-area-inset-bottom, 0px), 16px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Aurelle Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrB33gFILUb3GBqeLN5wAz03dC2n-KCa-mNNTtYvs8fEx5EtjKhH2FOGYi0rp_RKHnsINZPQ-uzawKChOzl75-_9yVROE51xeeAIgcuPNN2kysTP7VGbbgJQdQcyU-emWJC1QJnvddSZFWwfEDEhwkWvRK36ySSnFu5wozBB12PeXi0_h23e67Xtj92EJmJYvhD6JoVvTvgNwrADOopi1-SXW7XGX6UDGiPPdry3WHbL"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight ml-space-xs">Aurelle</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded-full" title="Data sovereignty compliance"><span class="material-symbols-outlined text-secondary text-[14px]">verified_user</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">EU Cloud AES-256</span></div><div class="flex items-center"><a class="w-11 h-11 flex items-center justify-center rounded-full hover:opacity-85 transition-opacity" data-path="settings" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAkPy4HVKq-n0oQ41t91SXqh-3Jb92uqgMOl0eKOgxf3T1fZ_joU3Q0pdAJ8v0EkylsEzWe4piBlSOrJOSY8xw0DShnP7OhZ3Xv45gyz3aAT_lUUutUlG6AC5-0Hs0f6LhYz1hv8lbhIvlDluM_Awm2te1lc_XN9X0N3Favx2qiPBtz839S-JVP20aYKrcOuVR9qLNaXI7ETlX20QURb3ibsC3SNxURgthuyec-Qs"/></a></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-28"><div class="flex flex-col w-full">
+<!-- Mode Switcher Top Bar -->
+<div class="px-gutter pt-space-xs pb-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Studio Creativo</span>
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase tracking-wider">v2.4 LayerAI</span>
+</div>
+<div class="flex items-center gap-space-xs text-secondary">
+<button class="w-9 h-9 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors" id="btn-undo" title="Deshacer">
+<span class="material-symbols-outlined text-[19px]">undo</span>
+</button>
+<button class="w-9 h-9 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors" id="btn-redo" title="Rehacer">
+<span class="material-symbols-outlined text-[19px]">redo</span>
+</button>
+</div>
+</div>
+<!-- Segmented Control Mode Switcher -->
+<div class="p-1 bg-surface-container-high rounded-xl flex items-center justify-between text-center select-none">
+<button class="flex-1 py-2 px-3 rounded-lg font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm font-semibold flex items-center justify-center gap-1.5" id="tab-canvas">
+<span class="material-symbols-outlined text-[16px] text-primary">draw</span>
+<span>Canvas Libre</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-lg font-label-md text-label-md transition-all duration-200 text-secondary hover:text-on-surface flex items-center justify-center gap-1.5" id="tab-travel">
+<span class="material-symbols-outlined text-[16px]">luggage</span>
+<span>Maleta &amp; Viajes</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+</button>
+</div>
+</div>
+<!-- Main Canvas Sandbox Container -->
+<div class="px-gutter pb-space-md">
+<div class="relative w-full aspect-[4/5] max-h-[460px] rounded-xl overflow-hidden bg-surface-container-low shadow-[0_8px_28px_-6px_rgba(46,86,121,0.08)] flex flex-col justify-between">
+<!-- Canvas Atmospheric Dot Pattern Background -->
+<div class="absolute inset-0 opacity-40 pointer-events-none" style="background-image: radial-gradient(rgba(78,96,117,0.28) 1px, transparent 1px); background-size: 16px 16px;"></div>
+<!-- Top Canvas Tool Overlay -->
+<div class="relative z-20 p-space-sm flex items-center justify-between pointer-events-auto">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">layers</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">4 Capas Activas</span>
+</div>
+<!-- Canvas Quick Floating Actions -->
+<div class="flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md p-1 rounded-full shadow-sm text-on-surface">
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" id="tool-center" title="Centrar todo">
+<span class="material-symbols-outlined text-[17px]">filter_center_focus</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" id="tool-flip" title="Invertir horizontal">
+<span class="material-symbols-outlined text-[17px]">flip</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors" id="tool-duplicate" title="Duplicar capa">
+<span class="material-symbols-outlined text-[17px]">content_copy</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-error-container text-error transition-colors" id="tool-clear" title="Eliminar selección">
+<span class="material-symbols-outlined text-[17px]">delete_outline</span>
+</button>
+</div>
+</div>
+<!-- Multi-Layer Visual Sandbox Composition Zone -->
+<div class="relative flex-1 w-full h-full overflow-hidden select-none" id="interactive-stage">
+<!-- Layer 0: Fondo (Gabardina Camel Fluida) -->
+<div class="canvas-item absolute inset-x-0 mx-auto top-2 w-[72%] h-[84%] cursor-move transition-transform duration-100 ease-out" id="layer-0" style="z-index: 0; transform: scale(1.08) rotate(-1.5deg);">
+<div class="relative w-full h-full group">
+<img class="w-full h-full object-contain pointer-events-none drop-shadow-[0_12px_20px_rgba(26,28,27,0.12)]" data-alt="High-fashion studio cut-out of an oversized luxury camel trench coat, fluid drape, unbuttoned, neutral fabric tones, crisp shadowless haute couture editorial photography on clean transparent backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsHcos52C0f9xjZby6FvvdSvafm7-nto-8ktzbpKMa9Nn1_J8yRi_ssLDc8qEY2jtP2vktG9wepvMwbu8DiSCxZub1I_JxYMgrLP9psmZg-iZz3zFbI9bEmTmOpPIeoWsZLUc04WmavE9EkOXMhaBCJ8I5FY_IbIF4FOG0kfVhTvJT_9QrCxJCp_a7XqNk09KgYL0NYPM9Dm_4ALzsQv9LeDZPukttOYo7p2tRuvs"/>
+<div class="absolute -top-1 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full text-[9px] font-label-sm text-secondary tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-sm">
+              L0 · Abrigo Camel
+            </div>
+</div>
+</div>
+<!-- Layer 1: Cuerpo (Camisa Oxford Blanca) -->
+<div class="canvas-item absolute inset-x-0 mx-auto top-12 w-[52%] h-[56%] cursor-move transition-transform duration-100 ease-out" id="layer-1" style="z-index: 10; transform: scale(0.98) rotate(0.8deg);">
+<div class="relative w-full h-full group">
+<img class="w-full h-full object-contain pointer-events-none drop-shadow-[0_8px_16px_rgba(26,28,27,0.08)]" data-alt="Minimalist structured white crisp poplin Oxford shirt, open collar, Italian cotton finish, transparent background studio cut-out, tailored silhouette high editorial styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVWnQEmuuzOBAkgibPvKsyz1GGHVWvIhwSL9IJRac6Rz9d5peHno7qH_oRXhSQgaY0Kr1w2MWxpjViBvhkm931zWFngit2hoqyZnnW2hUU4jA8VBG-UXTt0Uyb9XhrKHgRU_v0Wkq1dXad_UJIcrYi3Uwam7DKaGYaRG_4Lvb5zEQTwj8al1IaEHdcHXt8_ONIa82LL02dEg3stypTlP-VTVMhQZJaAdojxz2c0wA"/>
+<div class="absolute -top-1 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full text-[9px] font-label-sm text-secondary tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-sm">
+              L1 · Camisa Oxford
+            </div>
+</div>
+</div>
+<!-- Layer 2: Inferior (Falda Midi Plisada Carbón) -->
+<div class="canvas-item absolute inset-x-0 mx-auto bottom-10 w-[56%] h-[58%] cursor-move transition-transform duration-100 ease-out" id="layer-2" style="z-index: 20; transform: scale(1.0) rotate(-0.5deg);">
+<div class="relative w-full h-full group">
+<img class="w-full h-full object-contain pointer-events-none drop-shadow-[0_10px_20px_rgba(26,28,27,0.1)]" data-alt="Studio cutout of an elegant charcoal grey pleated midi skirt, fluid vertical pleats, fine wool blend fabric, crisp atelier presentation on transparent pure minimalist backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhx3xZ3smLzdBU-wRU1Yd4YIoBczV_syuujef_rfzpbN3zj_aYznCMuxEJP6rJVM_aqbSHpiY188O2Zeurk9Sy7xdxsOARKYq1VQqpMGtd73O-m1hwqjXiASOJsy-boYJK-0DlgZBafykg1G-bd2PFth9d6Ri3v8ZWcx3Inyykq_k3dAlBwOLcyTn_OH5qhUK1h3Wz_q-vSxhsI-Fm3chMAGjKbF1tOvOV4E1AbXk"/>
+<div class="absolute top-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full text-[9px] font-label-sm text-secondary tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-sm">
+              L2 · Falda Plisada
+            </div>
+</div>
+</div>
+<!-- Layer 3: Accesorios (Bolso Bandolera Piel & Mocasines) -->
+<div class="canvas-item absolute right-4 bottom-8 w-[38%] h-[38%] cursor-move transition-transform duration-100 ease-out" id="layer-3" style="z-index: 30; transform: scale(0.96) rotate(3deg);">
+<div class="relative w-full h-full group">
+<img class="w-full h-full object-contain pointer-events-none drop-shadow-[0_12px_24px_rgba(26,28,27,0.14)]" data-alt="Luxurious smooth brown saddle leather crossbody bag with brass hardware paired neatly with handcrafted dark espresso leather loafers, Italian leather craftsmanship, transparent cutout studio isolation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZebNJwLEVUMAOfvUnZbL_5EcR9qGKirMa6a0tMo-HnV239V4nd7wmlh_cesXG_95Ei5ginxqKRGbOwP3gLXI8tAzbC4nf8dnJU72Z_lNsTaBz3ZOQZhqeBCyTYSmaft6eItUZNa9bARQhun_03MmWq6dY_jmUp3TINR8to85KnqXyexKp-H2eDvCXlzSF9Rv2WQlVYf0W8BQCAlTys4uV-HHjwqDkDAgNjHFOFNg"/>
+<div class="absolute -top-1 right-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded-full text-[9px] font-label-sm text-secondary tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-sm">
+              L3 · Accesorios Cuero
+            </div>
+</div>
+</div>
+<!-- Active Gestural Target Ring Overlay (Delightful interactive indicator) -->
+<div class="absolute inset-0 pointer-events-none opacity-0 transition-opacity duration-300 flex items-center justify-center" id="magnet-guide">
+<div class="w-48 h-48 rounded-full border-2 border-dashed border-primary/40 animate-spin" style="animation-duration: 18s;"></div>
+</div>
+</div>
+<!-- Canvas Bottom Status & Gesture Guide Pill -->
+<div class="relative z-20 px-space-sm pb-space-sm pointer-events-none flex items-center justify-between">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full shadow-sm text-secondary pointer-events-auto">
+<span class="material-symbols-outlined text-[13px] text-tertiary">touch_app</span>
+<span class="font-label-sm text-label-sm">Pinch escala · Tap rota 45°</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full shadow-sm text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+<span>Magnet: On</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Canvas Top Actions (Lookbook & Export) -->
+<div class="px-gutter pb-space-md grid grid-cols-2 gap-space-sm">
+<button class="h-12 bg-on-surface hover:bg-secondary text-surface-lowest text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span>Guardar Look</span>
+</button>
+<button class="h-12 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-2 active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Exportar 4K</span>
+</button>
+</div>
+<!-- Bottom Drawer: Garment Picker Carousel (Thumb Ergonomics) -->
+<div class="px-gutter pb-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">add_to_photos</span>
+<span class="font-title-md text-title-md text-on-surface">Armario Cápsula</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">32 Piezas Disponibles</span>
+</div>
+<!-- Category Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+<button class="px-3.5 py-1 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-medium shrink-0 shadow-sm">Tops (12)</button>
+<button class="px-3.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary hover:text-on-surface shrink-0">Bottoms (8)</button>
+<button class="px-3.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary hover:text-on-surface shrink-0">Capas (4)</button>
+<button class="px-3.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary hover:text-on-surface shrink-0">Calzado (5)</button>
+<button class="px-3.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary hover:text-on-surface shrink-0">Bolsos (3)</button>
+</div>
+<!-- Garment Selection Horizontal Tray -->
+<div class="grid grid-cols-4 gap-2.5 pt-1">
+<!-- Garment Quick Card 1 -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-2 flex flex-col items-center gap-1.5 shadow-sm hover:shadow transition-shadow cursor-pointer select-none">
+<div class="w-full aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center p-1 relative">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200" data-alt="Chic lightweight knit merino turtleneck sweater in muted cream ivory, delicate texture, fashion studio product cut-out on white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMbx4nSbDmCpMnPOraeViqDLLWWMvqUzyW0A-H2LRjQjilYIcgTDjLsuKw69-0Qc6HYDL2y0R_MNNiQOv7n7H75wq8GxbUSaxfzT9sV0IowrAhAub4ZMcSBtaAwFjchde0KQeXqnlBQjsvfA_A6GhcnJk1JVGs7mY2Y7Ev0fhFeku1kSEZyiw1XVIQ4YknVZ_RZ0dwPQud5sLeZBQ5R-FW02cyHRz3UiJQuWTSX5Q"/>
+<button class="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm opacity-90 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+<div class="w-full text-center">
+<p class="font-label-sm text-label-sm text-on-surface truncate">Cuello Alto</p>
+<span class="font-label-sm text-[9px] text-secondary">Merino</span>
+</div>
+</div>
+<!-- Garment Quick Card 2 -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-2 flex flex-col items-center gap-1.5 shadow-sm hover:shadow transition-shadow cursor-pointer select-none">
+<div class="w-full aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center p-1 relative">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200" data-alt="Dark navy tailored wool blazer, minimalist lapel, bespoke jacket tailoring, high end European silhouette, studio isolated photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANvQI3qnoIZcfc85elt1cPYArrBA6q5SpPu-r6jTJfpv8fnBFBQsLPGcrTFGl6UOIf3LeAQY675zM23wgDNCr-HeJrZ-9O7uEF0luuaR05ibBoeYxhEKn41uMFGt4LIQ8r7izrtYUjN_s1OMIkjq5V2638PrYq37oZBGNlsrjlVYtJZ5UtfQNM0Y-7kr8XnujTiPicr0bf3VnBjkYAfBJjF__opQHQx4UlelZjhWU"/>
+<button class="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm opacity-90 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+<div class="w-full text-center">
+<p class="font-label-sm text-label-sm text-on-surface truncate">Blazer Marino</p>
+<span class="font-label-sm text-[9px] text-secondary">Lana Fría</span>
+</div>
+</div>
+<!-- Garment Quick Card 3 -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-2 flex flex-col items-center gap-1.5 shadow-sm hover:shadow transition-shadow cursor-pointer select-none">
+<div class="w-full aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center p-1 relative">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200" data-alt="Wide leg pleated tailoring trousers in taupe sand tone, clean draping silhouette, luxury minimalist fashion product studio cut out." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIOM6YM25VPOD9FPiZ_1UcowXmEulJUVI-P9zWKZRffoOjmfu8-U-CUI5-XcIc0I6--IE2r8huEwhyNZhWocGAZb0p9WKMJsKdGM9qyhit8vcIur9jSVHqSPXDJhD3YjijlavljDL0QyPI15WaSrGOjL439cpy8sHtDnoZYPkz72_HNbAuHK0YBKhkeMUwnzwQLcYgGfNVn5ka0PJFzeBUPHeKUu4Ipgpp4EK4ASo"/>
+<button class="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm opacity-90 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+<div class="w-full text-center">
+<p class="font-label-sm text-label-sm text-on-surface truncate">Pantalón Flare</p>
+<span class="font-label-sm text-[9px] text-secondary">Taupe</span>
+</div>
+</div>
+<!-- Garment Quick Card 4 -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-2 flex flex-col items-center gap-1.5 shadow-sm hover:shadow transition-shadow cursor-pointer select-none">
+<div class="w-full aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center p-1 relative">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-200" data-alt="Modern leather white minimal sneakers with ecru rubber sole, understated quiet luxury footwear cut-out photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKlZx6bB3mNUTT6vKxavLKieze5EGQolZIYlQuuqw7gI7HmdG-fosX9I_6vf09_QNNopm4quyNsHC0ZIa5sScoQzNzVxiJYmsOM0qkgmVGowFvKuJ1ILEisFTcFhXPlDvzuxw8i4KAqQqCNOierMvvmj2aoWDM2wozKijQUxw1xCTL-NiAFVY9_OTsO4l03NZhv6vIYfAdUgADy11pjJdpzf8xoINaw8cTFnJP5s0"/>
+<button class="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm opacity-90 group-hover:opacity-100">
+<span class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+<div class="w-full text-center">
+<p class="font-label-sm text-label-sm text-on-surface truncate">Sneakers Court</p>
+<span class="font-label-sm text-[9px] text-secondary">Piel Lisa</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Travel Planner Module (Combinatorial Luggage Engine FR-TRV-01) -->
+<div class="px-gutter pb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<!-- Top Subtle Gradient Accents -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/30 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Module Header -->
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[22px]">flight_takeoff</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Escapada Londres 4D</span>
+<span class="bg-secondary-container text-on-secondary-container text-[10px] font-label-sm font-semibold px-2 py-0.5 rounded-full">Dual Work+Leisure</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Algoritmo de empaque inteligente (FR-TRV-01)</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">expand_less</span>
+</div>
+<!-- Combinatorial Formula Visual Display -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-2 relative z-10">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Cápsula Matemáticamente Optimizada</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">bolt</span> 6 Outfits Listos
+          </span>
+</div>
+<!-- Formula badges row -->
+<div class="flex items-center justify-between text-center pt-1 font-label-sm text-label-sm text-on-surface">
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center font-bold text-primary shadow-xs">1</span>
+<span class="text-[10px] text-secondary mt-1">Capa</span>
+</div>
+<span class="text-secondary font-bold">+</span>
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center font-bold text-primary shadow-xs">2</span>
+<span class="text-[10px] text-secondary mt-1">Tops</span>
+</div>
+<span class="text-secondary font-bold">+</span>
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center font-bold text-primary shadow-xs">2</span>
+<span class="text-[10px] text-secondary mt-1">Bottoms</span>
+</div>
+<span class="text-secondary font-bold">+</span>
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-lg bg-surface-container-lowest flex items-center justify-center font-bold text-primary shadow-xs">2</span>
+<span class="text-[10px] text-secondary mt-1">Zapatos</span>
+</div>
+<span class="text-secondary font-bold">=</span>
+<div class="flex flex-col items-center">
+<span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-bold shadow-xs">6</span>
+<span class="text-[10px] text-primary font-semibold mt-1">Combinac.</span>
+</div>
+</div>
+</div>
+<!-- Luggage Weight & Circular Progress Module -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<div class="bg-surface-container-low rounded-xl p-3 flex items-center gap-3">
+<!-- Circular Ring Representation -->
+<div class="relative w-12 h-12 shrink-0 flex items-center justify-center">
+<svg class="w-12 h-12 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="82, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-sm text-[10px] font-bold text-on-surface">8.2k</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Peso Valija</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Cabina OK</span>
+<span class="font-label-sm text-[10px] text-emerald-700 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px]">check_circle</span> -1.8 kg límite
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col justify-center">
+<span class="font-label-sm text-label-sm text-secondary">Eficiencia Reuso</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-md text-headline-md text-primary font-bold">100%</span>
+<span class="font-label-sm text-[10px] text-secondary">piezas</span>
+</div>
+<span class="font-label-sm text-[10px] text-tertiary font-medium">Cero prendas ociosas</span>
+</div>
+</div>
+<!-- Action Button inside Travel Drawer -->
+<button class="w-full mt-1 py-2.5 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-xl font-label-md text-label-md flex items-center justify-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span>
+<span>Ver Calendario de Outfits por Día (Londres)</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for tactile canvas delight
+  (function initCanvasStudio() {
+    const items = document.querySelectorAll('.canvas-item');
+    const magnetGuide = document.getElementById('magnet-guide');
+    let activeItem = null;
+    let startX = 0, startY = 0;
+    let initialX = 0, initialY = 0;
+    let rotations = { 'layer-0': -1.5, 'layer-1': 0.8, 'layer-2': -0.5, 'layer-3': 3.0 };
+
+    items.forEach(item => {
+      // Tap to rotate 45 degrees
+      item.addEventListener('click', (e) => {
+        const id = item.id;
+        rotations[id] = (rotations[id] + 45) % 360;
+        const currentTransform = item.style.transform;
+        const scaleMatch = currentTransform.match(/scale\(([^)]+)\)/);
+        const scale = scaleMatch ? scaleMatch[1] : '1';
+        item.style.transform = `scale(${scale}) rotate(${rotations[id]}deg)`;
+        
+        // Brief pulse effect
+        if (magnetGuide) {
+          magnetGuide.classList.remove('opacity-0');
+          setTimeout(() => magnetGuide.classList.add('opacity-0'), 400);
+        }
+      });
+    });
+
+    // Segmented tab switch feel
+    const tabCanvas = document.getElementById('tab-canvas');
+    const tabTravel = document.getElementById('tab-travel');
+
+    if (tabCanvas && tabTravel) {
+      tabCanvas.addEventListener('click', () => {
+        tabCanvas.className = "flex-1 py-2 px-3 rounded-lg font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm font-semibold flex items-center justify-center gap-1.5";
+        tabTravel.className = "flex-1 py-2 px-3 rounded-lg font-label-md text-label-md transition-all duration-200 text-secondary hover:text-on-surface flex items-center justify-center gap-1.5";
+      });
+
+      tabTravel.addEventListener('click', () => {
+        tabTravel.className = "flex-1 py-2 px-3 rounded-lg font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm font-semibold flex items-center justify-center gap-1.5";
+        tabCanvas.className = "flex-1 py-2 px-3 rounded-lg font-label-md text-label-md transition-all duration-200 text-secondary hover:text-on-surface flex items-center justify-center gap-1.5";
+      });
+    }
+
+    // Floating actions delight feedback
+    const centerBtn = document.getElementById('tool-center');
+    if (centerBtn) {
+      centerBtn.addEventListener('click', () => {
+        items.forEach(el => {
+          el.style.transform = 'scale(1) rotate(0deg)';
+        });
+      });
+    }
+
+    const flipBtn = document.getElementById('tool-flip');
+    if (flipBtn) {
+      flipBtn.addEventListener('click', () => {
+        items.forEach(el => {
+          if (el.style.transform.includes('scaleX(-1)')) {
+            el.style.transform = el.style.transform.replace('scaleX(-1)', 'scaleX(1)');
+          } else {
+            el.style.transform += ' scaleX(-1)';
+          }
+        });
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-2xl shadow-[0_-1px_12px_rgba(59,77,97,0.05)]" data-active-classes="text-on-surface font-semibold"><div class="flex items-center justify-around h-16 px-space-sm max-w-lg mx-auto"><a class="group relative flex flex-col items-center justify-center min-w-[48px] min-h-[48px] w-16 text-secondary hover:text-on-surface transition-colors" data-path="hoy" href="#"><span class="material-symbols-outlined text-[24px]">auto_awesome</span><span class="font-label-sm text-label-sm mt-1">Hoy</span><span class="absolute top-1 right-3.5 w-1.5 h-1.5 rounded-full bg-tertiary hidden group-[.active]:block"></span></a><a class="group relative flex flex-col items-center justify-center min-w-[48px] min-h-[48px] w-16 text-secondary hover:text-on-surface transition-colors" data-path="armario" href="#"><span class="material-symbols-outlined text-[24px]">checkroom</span><span class="font-label-sm text-label-sm mt-1">Armario</span><span class="absolute top-1 right-3.5 w-1.5 h-1.5 rounded-full bg-tertiary hidden group-[.active]:block"></span></a><a aria-current="page" class="group relative flex flex-col items-center justify-center min-w-[48px] min-h-[48px] w-16 transition-colors text-on-surface font-semibold" data-path="studio" href="#"><span class="material-symbols-outlined text-[24px]">layers</span><span class="font-label-sm text-label-sm mt-1">Studio</span><span class="absolute top-1 right-3.5 w-1.5 h-1.5 rounded-full bg-tertiary hidden group-[.active]:block"></span></a><a class="group relative flex flex-col items-center justify-center min-w-[48px] min-h-[48px] w-16 text-secondary hover:text-on-surface transition-colors" data-path="cpw-eco" href="#"><span class="material-symbols-outlined text-[24px]">insert_chart</span><span class="font-label-sm text-label-sm mt-1">CPW &amp; Eco</span><span class="absolute top-1 right-3.5 w-1.5 h-1.5 rounded-full bg-tertiary hidden group-[.active]:block"></span></a></div></nav></body></html>
